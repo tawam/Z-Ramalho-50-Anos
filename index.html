@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Zé Ramalho 50 Anos | Trilogia • Fase I — A Jornada</title>
-  <meta name="description" content="Site-conceito para Zé Ramalho 50 Anos. Uma celebração nacional em três capítulos, iniciada pela Fase I: A Jornada." />
-  <meta name="theme-color" content="#11100f" />
+  <title>Zé Ramalho 50 Anos | Trilogia</title>
+  <meta name="description" content="Zé Ramalho 50 Anos — Trilogia. Uma celebração nacional em três capítulos." />
+  <meta name="theme-color" content="#15100c" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="page-noise" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
   <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
   <header class="site-header" data-header>
@@ -20,91 +20,98 @@
       <span>ZÉ RAMALHO</span>
       <small>50 anos</small>
     </a>
-
-    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
       <span></span><span></span>
       <em>Menu</em>
     </button>
-
     <nav class="site-nav" id="site-nav" data-nav>
-      <a href="#manifesto">O marco</a>
+      <a href="#marco">Marco</a>
+      <a href="#obra">Obra</a>
       <a href="#trilogia">Trilogia</a>
-      <a href="#jornada">A Jornada</a>
+      <a href="#jornada">Fase I</a>
       <a href="#brasil">Brasil</a>
-      <a href="#convidados">Convidados</a>
-      <a href="#legado">Legado</a>
     </nav>
   </header>
 
   <main id="top">
-    <section class="hero section-dark">
-      <div class="hero-media image-shell tritone">
-        <img src="assets/img/full-standing-dark-tone.jpg" alt="Zé Ramalho em pé no sertão, em traje preto, segurando o violão ao lado do corpo." />
-      </div>
-      <div class="hero-overlay"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Trilogia • Fase I</p>
-          <h1>Zé Ramalho <span>50 anos</span></h1>
-          <p class="lead">A maior celebração já concebida para uma obra que atravessou o Brasil, conectou gerações e se transformou em parte da memória afetiva do país.</p>
-          <div class="hero-badges">
-            <span>2027</span>
-            <span>3 fases</span>
-            <span>1 celebração nacional</span>
-          </div>
+    <section class="hero section-dark" aria-label="Zé Ramalho 50 Anos">
+      <div class="hero-media" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Trilogia | Fase I</p>
+        <h1>Zé Ramalho<br><span>50 anos</span></h1>
+        <p class="hero-subtitle">A primeira celebração de uma obra que atravessou o Brasil.</p>
+        <div class="hero-meta" aria-label="Informações principais">
+          <span>2027</span>
+          <span>A Jornada</span>
+          <span>O Brasil como palco</span>
         </div>
-
-        <aside class="hero-panel reveal">
-          <strong>Uma história grande demais para caber em uma única turnê.</strong>
-          <p>Por isso nasce a Trilogia dos 50 Anos: três capítulos, uma única história.</p>
-          <a href="#manifesto" class="button-link">Explorar o projeto</a>
-        </aside>
       </div>
-      <a class="scroll-cue" href="#manifesto" aria-label="Descer para a próxima seção">
+      <a class="scroll-cue" href="#marco" aria-label="Avançar para a próxima seção">
         <span></span>
         Descer
       </a>
     </section>
 
-    <section class="section-paper" id="manifesto">
-      <div class="container split-content split-reverse">
+    <section class="chapter paper-section" id="marco">
+      <div class="container two-col align-end">
+        <div class="kicker reveal">
+          <span>01</span>
+          <p>O marco</p>
+        </div>
         <div class="copy-block reveal">
-          <p class="eyebrow">O marco</p>
           <h2>Existe apenas uma primeira vez.</h2>
-          <p>Existe o primeiro disco. O primeiro grande sucesso. O primeiro show. E existe uma única primeira celebração de 50 anos.</p>
-          <p>Em 2027, Zé Ramalho alcança um marco reservado a poucos artistas da história da música brasileira. Mais do que uma turnê comemorativa, o projeto propõe um acontecimento cultural à altura dessa trajetória.</p>
+          <p>Existe o primeiro disco. O primeiro grande sucesso. O primeiro palco que muda tudo.</p>
+          <p>E existe uma única chance de transformar cinquenta anos de carreira em um acontecimento nacional.</p>
           <p class="statement">Uma oportunidade única. Irrepetível. Histórica.</p>
         </div>
-        <figure class="media-card reveal image-shell tritone">
-          <img src="assets/img/closeup-desert-tone.jpg" alt="Retrato fechado de Zé Ramalho olhando diretamente para a câmera." />
-        </figure>
       </div>
     </section>
 
-    <section class="section-dark feature-band" id="obra">
-      <div class="container feature-grid">
-        <div class="feature-copy reveal">
-          <p class="eyebrow">Cinco décadas de permanência</p>
-          <h2>Uma obra que atravessou o Brasil.</h2>
-          <p>Ao longo de cinco décadas, Zé Ramalho construiu uma das trajetórias mais consistentes da música brasileira. Sua obra ultrapassou estilos, atravessou regiões, conectou gerações e passou a viver na história de milhões de brasileiros.</p>
+    <section class="image-copy section-ink" id="obra">
+      <div class="split-visual" aria-hidden="true">
+        <img src="assets/img/obra-brasil.webp" alt="" loading="lazy">
+      </div>
+      <div class="split-copy reveal">
+        <p class="eyebrow">Cinco décadas</p>
+        <h2>Uma obra que atravessou o Brasil.</h2>
+        <p>Ao longo de cinco décadas, Zé Ramalho construiu uma das trajetórias mais consistentes da música brasileira.</p>
+        <p>Uma obra que ultrapassou estilos, atravessou regiões, conectou gerações e se transformou em parte da memória afetiva do país.</p>
+      </div>
+    </section>
+
+    <section class="stats paper-section" aria-label="Dimensão da carreira e do projeto">
+      <div class="container">
+        <div class="stats-intro reveal">
+          <p class="eyebrow">Dimensão</p>
+          <h2>Não é volume. É permanência.</h2>
         </div>
-        <div class="stats-grid reveal">
-          <article class="stat-card"><strong>50</strong><span>anos de carreira</span></article>
-          <article class="stat-card"><strong>milhares</strong><span>de apresentações</span></article>
-          <article class="stat-card"><strong>milhões</strong><span>de espectadores</span></article>
-          <article class="stat-card"><strong>dezenas</strong><span>de clássicos</span></article>
-          <article class="stat-card"><strong>inúmeras</strong><span>gerações impactadas</span></article>
-          <article class="stat-card"><strong>1</strong><span>legado vivo</span></article>
+        <div class="stats-grid">
+          <article class="stat-card reveal"><strong>50</strong><span>anos de carreira</span></article>
+          <article class="stat-card reveal"><strong>60+</strong><span>apresentações</span></article>
+          <article class="stat-card reveal"><strong>20+</strong><span>cidades</span></article>
+          <article class="stat-card reveal"><strong>5</strong><span>regiões do país</span></article>
+          <article class="stat-card reveal"><strong>3</strong><span>fases</span></article>
+          <article class="stat-card reveal"><strong>1</strong><span>legado</span></article>
         </div>
       </div>
     </section>
 
-    <section class="section-paper focus-section">
-      <div class="container focus-grid">
-        <div class="focus-copy reveal">
-          <p class="eyebrow">O momento é agora</p>
-          <h2>Não existe outro aniversário de 50 anos.</h2>
-          <p>Também não existe outra oportunidade de reunir público, imprensa, parceiros e mercado em torno de um marco dessa dimensão. O projeto nasce com três objetivos claros:</p>
+    <section class="moment section-dark" id="momento">
+      <div class="moment-bg" aria-hidden="true"></div>
+      <div class="container narrow reveal">
+        <p class="eyebrow">O momento é agora</p>
+        <h2>Não existe outro aniversário de 50 anos.</h2>
+        <p>Não existe outra oportunidade de reunir público, imprensa, parceiros e mercado em torno de um marco dessa dimensão.</p>
+        <p class="statement light">Mais do que uma turnê. Uma oportunidade histórica.</p>
+      </div>
+    </section>
+
+    <section class="objectives paper-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">À altura da história</p>
+          <h2>Celebrar. Mobilizar. Registrar.</h2>
         </div>
         <div class="objective-grid">
           <article class="objective-card reveal">
@@ -115,276 +122,152 @@
           <article class="objective-card reveal">
             <span>02</span>
             <h3>Mobilizar</h3>
-            <p>Milhões de pessoas que acompanharam essa história ao longo do tempo.</p>
+            <p>Milhões de pessoas que acompanharam essa história.</p>
           </article>
           <article class="objective-card reveal">
             <span>03</span>
             <h3>Registrar</h3>
-            <p>Esse legado para as próximas gerações, de forma definitiva.</p>
+            <p>Esse legado para as próximas gerações.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section-dark metrics-panel" id="dimensao">
-      <div class="container metrics-grid">
-        <div class="metrics-copy reveal">
-          <p class="eyebrow">Uma celebração nacional</p>
-          <h2>Um projeto com a dimensão da sua história.</h2>
-          <p>Mais do que uma turnê, a proposta é uma jornada nacional construída para percorrer o Brasil inteiro, com mais de um ano de duração, participações especiais, projetos de mídia e registro histórico.</p>
-        </div>
-        <div class="number-strip reveal">
-          <div><strong>50</strong><span>anos de carreira</span></div>
-          <div><strong>~60</strong><span>apresentações</span></div>
-          <div><strong>20+</strong><span>cidades</span></div>
-          <div><strong>5</strong><span>regiões do país</span></div>
-          <div><strong>3</strong><span>fases</span></div>
-          <div><strong>1</strong><span>legado</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-paper" id="trilogia">
+    <section class="trilogy section-ink" id="trilogia">
       <div class="container">
-        <div class="section-heading reveal">
+        <div class="trilogy-head reveal">
           <p class="eyebrow">Trilogia dos 50 anos</p>
-          <h2>Três capítulos. Uma única história.</h2>
-          <p>O projeto se organiza em três grandes frentes complementares, cada uma com função própria dentro da celebração.</p>
+          <h2>Uma história grande demais para caber em uma única turnê.</h2>
+          <p>Três capítulos. Uma única história.</p>
         </div>
-        <div class="chapter-grid">
-          <article class="chapter-card reveal active">
-            <span>Fase I</span>
-            <h3>A Jornada</h3>
-            <p>O capítulo que dá início às comemorações: uma homenagem às origens, à estrada, ao público e ao Brasil.</p>
-          </article>
-          <article class="chapter-card reveal">
-            <span>Fase II</span>
-            <h3>Os Encontros</h3>
-            <p>A obra em diálogo com vozes, parceiros, repertórios e momentos capazes de ampliar ainda mais seu alcance.</p>
-          </article>
-          <article class="chapter-card reveal">
-            <span>Fase III</span>
-            <h3>A Permanência</h3>
-            <p>O legado registrado para o presente e para o futuro, consolidando a memória dessa celebração.</p>
-          </article>
+        <div class="trilogy-layout">
+          <div class="trilogy-art reveal" aria-hidden="true">
+            <img src="assets/img/trilogia.webp" alt="" loading="lazy">
+          </div>
+          <div class="chapter-list">
+            <article class="chapter-card reveal">
+              <span>Fase I</span>
+              <h3>A Jornada</h3>
+              <p>As origens, a estrada, o povo. O capítulo mais amplo, mais nacional, mais popular.</p>
+            </article>
+            <article class="chapter-card reveal">
+              <span>Fase II</span>
+              <h3>Os Encontros</h3>
+              <p>A obra em diálogo: artistas, vozes, palcos, gerações e encontros que ampliam seu alcance.</p>
+            </article>
+            <article class="chapter-card reveal">
+              <span>Fase III</span>
+              <h3>A Permanência</h3>
+              <p>O legado registrado para quem viveu essa história e para quem ainda vai descobri-la.</p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section-dark spotlight" id="jornada">
-      <div class="container split-content">
-        <figure class="media-card large reveal image-shell tritone">
-          <img src="assets/img/play-brown-guitar-tone.jpg" alt="Zé Ramalho cantando e tocando violão em meio ao cenário árido." />
-        </figure>
+    <section class="journey paper-section" id="jornada">
+      <div class="container two-col">
+        <div class="journey-poster reveal">
+          <img src="assets/img/jornada.webp" alt="Estrada em preto e branco usada como referência visual da Fase I" loading="lazy">
+        </div>
         <div class="copy-block reveal">
-          <p class="eyebrow">Fase I • A Jornada</p>
-          <h2>Ao público. Ao Brasil. Às origens.</h2>
-          <p>A Jornada abre oficialmente as comemorações dos 50 anos. É o capítulo mais abrangente da trilogia, pensado para honrar a formação simbólica da obra de Zé Ramalho e o vínculo construído com o país ao longo de cinco décadas.</p>
-          <p>É também a fase mais nacional, a mais popular e a mais capaz de transformar a celebração em experiência compartilhada.</p>
-          <p class="statement light">Uma homenagem às origens, à estrada, ao povo e a tudo aquilo que ajudou a transformar essa trajetória em patrimônio cultural.</p>
+          <p class="eyebrow">Fase I</p>
+          <h2>A Jornada</h2>
+          <p>O capítulo que dá início às comemorações. Uma homenagem às origens, à estrada, ao público, ao Brasil.</p>
+          <p>A tudo aquilo que ajudou a transformar uma trajetória artística em patrimônio cultural.</p>
+          <p class="statement">A fase mais abrangente da trilogia. A mais nacional. A mais popular.</p>
         </div>
       </div>
     </section>
 
-    <section class="section-paper pillars-section">
+    <section class="pillars section-dark" aria-label="Pilares da Jornada">
       <div class="container">
         <div class="section-heading reveal">
           <p class="eyebrow">Os pilares da jornada</p>
-          <h2>Três territórios explicam a força e a permanência da obra.</h2>
+          <h2>Três territórios explicam sua força e permanência.</h2>
         </div>
         <div class="pillar-grid">
           <article class="pillar-card reveal">
-            <span>01</span>
-            <h3>As origens</h3>
-            <p>O sertão. A poesia. A espiritualidade. A imaginação. Referências que ajudaram a construir uma das vozes mais singulares da música brasileira.</p>
+            <img src="assets/img/origens.webp" alt="Referência visual sobre as origens" loading="lazy">
+            <div>
+              <span>01</span>
+              <h3>As origens</h3>
+              <p>O sertão. A poesia. A espiritualidade. A imaginação. Referências que ajudaram a construir uma das vozes mais singulares da música brasileira.</p>
+            </div>
           </article>
           <article class="pillar-card reveal">
-            <span>02</span>
-            <h3>A estrada</h3>
-            <p>50 anos percorrendo o Brasil. Milhares de quilômetros. Centenas de cidades. Uma trajetória construída encontro após encontro, canção após canção.</p>
+            <img src="assets/img/estrada.webp" alt="Referência visual sobre estrada e palco" loading="lazy">
+            <div>
+              <span>02</span>
+              <h3>A estrada</h3>
+              <p>Cinquenta anos percorrendo o Brasil. Uma trajetória construída encontro após encontro, cidade após cidade, canção após canção.</p>
+            </div>
           </article>
           <article class="pillar-card reveal">
-            <span>03</span>
-            <h3>O povo</h3>
-            <p>Há muito tempo, essas músicas deixaram de pertencer apenas ao artista. Elas passaram a viver nas histórias de quem as canta, guarda e transmite adiante.</p>
+            <img src="assets/img/povo.webp" alt="Referência visual sobre o público" loading="lazy">
+            <div>
+              <span>03</span>
+              <h3>O povo</h3>
+              <p>Há muito tempo, essas músicas deixaram de pertencer apenas ao artista. Elas passaram a viver nas histórias de milhões de brasileiros.</p>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section-dark route-section" id="brasil">
-      <div class="container route-grid">
-        <div class="route-copy reveal">
+    <section class="brasil paper-section" id="brasil">
+      <div class="container two-col align-center">
+        <div class="copy-block reveal">
           <p class="eyebrow">O Brasil como palco</p>
-          <h2>Uma jornada nacional, construída para percorrer o país inteiro.</h2>
-          <p>A Jornada percorrerá todas as regiões do país, iniciando em São Paulo e encerrando no Rio de Janeiro, com roteiro sujeito à disponibilidade de datas, locais e oportunidades estratégicas.</p>
-          <ul class="route-list">
-            <li>Fevereiro de 2027 a março de 2028</li>
-            <li>Capitais e mercados estratégicos</li>
-            <li>Ações especiais em cidades emblemáticas</li>
-            <li>Mais de um ano de celebração</li>
-          </ul>
+          <h2>Uma jornada nacional construída para percorrer o país inteiro.</h2>
+          <p>Todas as regiões. Mais de um ano de celebração. Projetos de mídia, participações especiais e registro histórico.</p>
+          <p>Iniciando em São Paulo. Encerrando no Rio de Janeiro.</p>
+          <p class="statement">Uma grande celebração nacional.</p>
         </div>
-        <div class="route-panel reveal">
-          <div class="route-metrics">
-            <div><strong>+20</strong><span>cidades</span></div>
-            <div><strong>~60</strong><span>apresentações</span></div>
-            <div><strong>5</strong><span>regiões</span></div>
-            <div><strong>1</strong><span>história conectando o país inteiro</span></div>
-          </div>
-          <div class="city-cloud">
-            <span>Manaus</span><span>Belém</span><span>São Luís</span><span>Fortaleza</span><span>Natal</span><span>João Pessoa</span><span>Recife</span><span>Maceió</span><span>Aracaju</span><span>Salvador</span><span>Vitória</span><span>Brasília</span><span>Goiânia</span><span>Cuiabá</span><span>Campo Grande</span><span>São Paulo</span><span>Rio de Janeiro</span><span>Curitiba</span><span>Florianópolis</span><span>Porto Alegre</span>
-          </div>
+        <div class="map-frame reveal">
+          <img src="assets/img/brasil-palco.webp" alt="Mapa do Brasil como referência visual da jornada nacional" loading="lazy">
         </div>
       </div>
     </section>
 
-    <section class="section-paper gallery-section">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">A maior turnê da carreira</p>
-          <h2>Mais de um ano de estrada. Milhares de quilômetros. Milhões de pessoas impactadas.</h2>
-          <p>Uma única história conectando o país inteiro.</p>
-        </div>
-        <div class="gallery-grid">
-          <figure class="gallery-item reveal image-shell tritone"><img src="assets/img/portrait-guitar-vertical-tone.jpg" alt="Zé Ramalho abraçando o violão em retrato contemplativo." /></figure>
-          <figure class="gallery-item reveal image-shell tritone"><img src="assets/img/gesture-hands-tone.jpg" alt="Zé Ramalho em pose expressiva com as mãos levantadas ao lado do rosto." /></figure>
-          <figure class="gallery-item reveal image-shell tritone"><img src="assets/img/gesture-openhand-tone.jpg" alt="Zé Ramalho estende a mão para a câmera em gesto de convite." /></figure>
-          <figure class="gallery-item reveal image-shell tritone"><img src="assets/img/full-standing-guitar-tone.jpg" alt="Zé Ramalho em pé no sertão, com o violão ao lado." /></figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-dark" id="encontros">
-      <div class="container split-content split-reverse">
-        <div class="copy-block reveal">
-          <p class="eyebrow">Encontros históricos</p>
-          <h2>Uma obra em diálogo com grandes nomes da música brasileira.</h2>
-          <p>Ao longo de cinco décadas, a obra de Zé Ramalho construiu conexões profundas com artistas, repertórios e públicos diversos. A celebração dos 50 anos abre espaço para encontros memoráveis — não como adereço, mas como parte da própria narrativa da trajetória.</p>
-          <p>Dentro desse universo, canções como <em>Sinônimos</em> se apresentam como pontos de convergência afetiva, capazes de transformar memória musical em momento histórico dentro da celebração.</p>
-        </div>
-        <figure class="media-card reveal image-shell tritone">
-          <img src="assets/img/half-guitar-stage-tone.jpg" alt="Retrato de Zé Ramalho ao lado do braço do violão, com luzes de palco ao fundo." />
-        </figure>
-      </div>
-    </section>
-
-    <section class="section-paper guests-section" id="convidados">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Participações especiais</p>
-          <h2>Presenças pontuais, construídas como homenagem à trajetória.</h2>
-        </div>
-        <div class="guest-grid">
-          <article class="guest-card reveal">
-            <figure class="guest-photo image-shell tritone"><img src="assets/img/elba-tone.jpg" alt="Retrato de Elba Ramalho." /></figure>
-            <div class="guest-copy">
-              <h3>Elba Ramalho</h3>
-              <p>Representando as raízes e a força da cultura nordestina. Participações em datas selecionadas, alinhadas ao peso simbólico da celebração.</p>
-            </div>
-          </article>
-          <article class="guest-card reveal">
-            <figure class="guest-photo image-shell tritone"><img src="assets/img/joao-tone.jpg" alt="Retrato de João Ramalho." /></figure>
-            <div class="guest-copy">
-              <h3>João Ramalho</h3>
-              <p>Presença ao longo da jornada, simbolizando continuidade, legado e futuro. Mais do que convidado, um elo entre gerações.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-dark rollout-section">
-      <div class="container rollout-grid">
-        <div class="rollout-copy reveal">
-          <p class="eyebrow">Um acontecimento nacional</p>
-          <h2>Uma celebração com potencial para ultrapassar os palcos.</h2>
-          <p>O projeto se estende para além do circuito de shows, operando como plataforma cultural e de comunicação. A proposta contempla fala nacional, cobertura ampla e pontos de contato consistentes ao longo de toda a jornada.</p>
-        </div>
-        <div class="channel-grid reveal">
-          <span>TV</span>
-          <span>Imprensa</span>
-          <span>Streaming</span>
-          <span>Redes sociais</span>
-          <span>Conteúdos especiais</span>
-          <span>Patrocínios nacionais</span>
-        </div>
-      </div>
-      <div class="container launch-card reveal">
-        <div>
-          <h3>O Brasil será convidado para esta celebração.</h3>
-          <p>Proposta de lançamento nacional através do <strong>Fantástico</strong>, apresentando oficialmente a celebração dos 50 anos, sua trajetória, seus marcos e o início da Jornada.</p>
-        </div>
-        <div>
-          <h3>Do anúncio à experiência.</h3>
-          <p>Não apenas o anúncio de uma turnê, mas o início de um acontecimento cultural que seguirá das telas para as estradas, com presença em todas as regiões do país.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-paper legacy-flow">
-      <div class="container legacy-grid">
-        <div class="legacy-copy reveal">
-          <p class="eyebrow">Do Fantástico para as estradas</p>
-          <h2>Mais de 20 cidades. Mais de 60 apresentações. Mais de um ano de celebração.</h2>
-          <p>Depois do lançamento nacional, a Jornada ganha corpo como experiência pública em escala brasileira, convertendo visibilidade em presença real ao longo de todo o país.</p>
-        </div>
-        <div class="deliverables reveal">
-          <h3>Um legado para as próximas gerações</h3>
-          <ul>
-            <li>Registro audiovisual</li>
-            <li>Documentário</li>
-            <li>Memória</li>
-            <li>Acervo histórico</li>
-            <li>Depoimentos</li>
-            <li>Conteúdos especiais</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-dark reasons-section" id="legado">
-      <div class="container split-content">
-        <figure class="media-card reveal image-shell tritone">
-          <img src="assets/img/closeup-bw-tone.jpg" alt="Retrato em preto e branco de Zé Ramalho, destacando a textura do rosto e o olhar." />
-        </figure>
-        <div class="copy-block reveal">
-          <p class="eyebrow">Por que esta celebração é diferente?</p>
-          <h2>Porque ela não reduz a obra a uma data.</h2>
-          <ul class="reason-list">
-            <li>50 anos de carreira transformados em projeto nacional.</li>
-            <li>Trilogia inédita, com arquitetura narrativa própria.</li>
-            <li>Mais de um ano de duração.</li>
-            <li>Lançamento nacional e registro histórico.</li>
-            <li>Presença em todas as regiões do Brasil.</li>
-            <li>A maior celebração da carreira de Zé Ramalho.</li>
-          </ul>
-          <p>Este projeto não pretende transformar a obra de Zé Ramalho. Pretende celebrá-la, valorizá-la, ampliar seu alcance e construir uma comemoração compatível com a importância que essa trajetória possui para a música brasileira.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="closing section-paper">
-      <div class="container closing-grid">
-        <div class="closing-copy reveal">
-          <p class="eyebrow">Manifesto final</p>
-          <h2>Há artistas que fazem sucesso. Há artistas que marcam gerações.</h2>
-          <p>Há artistas que entram para a história. E existem aqueles raros que se transformam em parte da identidade cultural de um país. Durante cinquenta anos, Zé Ramalho fez exatamente isso.</p>
-          <p>Agora chegou o momento de celebrar essa história — não com uma turnê qualquer, mas com a maior homenagem já realizada à sua trajetória.</p>
-        </div>
-        <div class="closing-gallery">
-          <figure class="closing-photo reveal image-shell tritone"><img src="assets/img/half-guitar-desert-tone.jpg" alt="Zé Ramalho com o rosto parcialmente escondido pelo braço do violão, em cenário do sertão." /></figure>
-          <figure class="closing-photo reveal image-shell tritone"><img src="assets/img/stage-vintage-mic-tone.jpg" alt="Zé Ramalho em performance com violão e microfone vintage." /></figure>
-          <figure class="closing-photo reveal image-shell tritone"><img src="assets/img/stage-kiss-tone.jpg" alt="Zé Ramalho em palco, levando a mão aos lábios em gesto de agradecimento ao público." /></figure>
+    <section class="finale section-dark">
+      <div class="finale-bg" aria-hidden="true"></div>
+      <div class="container narrow reveal">
+        <p class="eyebrow">Zé Ramalho 50 Anos</p>
+        <h2>Não uma turnê comemorativa.</h2>
+        <p>A maior celebração já concebida para uma obra que segue viva, cantada e reconhecida em todo o Brasil.</p>
+        <div class="final-lines">
+          <span>Uma história viva.</span>
+          <span>Uma celebração nacional.</span>
         </div>
       </div>
     </section>
   </main>
 
+
+    <section class="agency-credits" id="creditos">
+      <div class="container credits-inner reveal">
+        <img class="sevenx-logo-img" src="assets/logo/sevenx_logo.svg" alt="SevenX" />
+
+        <dl class="credits-list">
+          <div><dt>Diretor Artístico</dt><dd>Gian Zambon</dd></div>
+          <div><dt>Direção Executiva</dt><dd>Bruno Neves</dd></div>
+          <div><dt>Diretor de Planejamento</dt><dd>Adriano Pinheiro</dd></div>
+          <div><dt>Diretor de Arte</dt><dd>Bruno Magrini</dd></div>
+          <div><dt>Vídeo, Motion &amp; Web Designer</dt><dd>Tawam Siqueira</dd></div>
+        </dl>
+
+        <p class="legal-copy">
+          O conteúdo desta apresentação é de autoria da SevenX e está protegido pelas Leis nº 9.610/98 e nº 9.279/96.
+          É vedada sua reprodução, utilização ou divulgação sem autorização prévia. Todos os direitos reservados.
+        </p>
+      </div>
+    </section>
+
   <footer class="site-footer">
     <div class="container footer-grid">
       <p>ZÉ RAMALHO 50 ANOS</p>
-      <p>TRILOGIA • FASE I — A JORNADA</p>
+      <p>TRILOGIA | FASE I — A JORNADA</p>
       <p>2027</p>
     </div>
   </footer>
