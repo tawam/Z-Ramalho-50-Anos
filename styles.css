@@ -932,3 +932,19 @@ h3 {
     transform: translate(-50%, -50%);
   }
 }
+
+
+/* Correção: imagens da galeria editorial preenchendo a caixa inteira */
+.editorial-gallery .photo-card {
+  height: 100%;
+}
+
+.editorial-gallery .photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.editorial-gallery .photo-card:first-child img {
+  object-position: center center;
+}
