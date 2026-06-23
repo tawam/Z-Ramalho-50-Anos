@@ -73,16 +73,21 @@ ul { margin: 0; padding-left: 1.15rem; }
   padding: .9rem 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   background: rgba(12, 9, 7, .88);
   border-bottom: 1px solid rgba(184, 146, 100, .18);
 }
 
 .brand {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   display: grid;
   justify-items: center;
   text-align: center;
   line-height: .9;
+  z-index: 2;
 }
 .brand strong {
   font-family: "Bebas Neue", sans-serif;
@@ -97,6 +102,8 @@ ul { margin: 0; padding-left: 1.15rem; }
 }
 
 .site-nav {
+  position: relative;
+  z-index: 3;
   display: flex;
   align-items: center;
   gap: clamp(.6rem, 1.4vw, 1.2rem);
@@ -121,6 +128,8 @@ ul { margin: 0; padding-left: 1.15rem; }
 .site-nav a:hover::after { transform: scaleX(1); }
 
 .menu-toggle {
+  position: relative;
+  z-index: 4;
   display: none;
   align-items: center;
   gap: .75rem;
@@ -911,5 +920,15 @@ h3 {
   .footer-grid {
     justify-content: center;
     text-align: center;
+  }
+}
+
+/* Centralização final do logo no header */
+
+@media (max-width: 840px) {
+  .brand {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
