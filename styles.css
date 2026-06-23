@@ -948,3 +948,33 @@ h3 {
 .editorial-gallery .photo-card:first-child img {
   object-position: center center;
 }
+
+
+/* Ajuste fino: terceira imagem da galeria mostra o violão inteiro */
+.editorial-gallery .photo-card:nth-child(3) {
+  background: #111;
+}
+
+.editorial-gallery .photo-card:nth-child(3) img {
+  object-fit: contain;
+  object-position: center center;
+  background: #111;
+}
+
+
+
+
+/* Correção específica: foto sentada com zoom/crop para não mostrar o violão sem cabeça */
+.editorial-gallery .seated-shot {
+  overflow: hidden;
+  background: #0f0c09;
+}
+
+.editorial-gallery .seated-shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+  object-position: 50% 58%;
+  transform: scale(1.18);
+  transform-origin: center center;
+}
