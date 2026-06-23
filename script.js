@@ -1,15 +1,15 @@
-const header = document.querySelector('[data-header]');
-const progress = document.querySelector('.scroll-progress span');
-const revealEls = document.querySelectorAll('.reveal');
-const menuToggle = document.querySelector('[data-menu-toggle]');
+
+const progressBar = document.querySelector('.scroll-progress span');
+const revealItems = document.querySelectorAll('.reveal');
+const toggle = document.querySelector('[data-menu-toggle]');
 const nav = document.querySelector('[data-nav]');
 
-function updateScrollUI() {
-  const max = document.documentElement.scrollHeight - window.innerHeight;
-  const current = Math.max(window.scrollY, 0);
-  const percent = max > 0 ? (current / max) * 100 : 0;
-  progress.style.width = `${percent}%`;
-  header.classList.toggle('is-scrolled', current > 24);
+function updateProgress() {
+  const doc = document.documentElement;
+  const scrollTop = doc.scrollTop || document.body.scrollTop;
+  const max = doc.scrollHeight - doc.clientHeight;
+  const value = max > 0 ? (scrollTop / max) * 100 : 0;
+  if (progressBar) progressBar.style.width = `${value}%`;
 }
 
 const observer = new IntersectionObserver((entries) => {
@@ -19,27 +19,24 @@ const observer = new IntersectionObserver((entries) => {
       observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.14, rootMargin: '0px 0px -6% 0px' });
+}, { threshold: 0.18 });
 
-revealEls.forEach((el, index) => {
-  el.style.transitionDelay = `${Math.min(index % 4, 3) * 70}ms`;
-  observer.observe(el);
-});
+revealItems.forEach((item) => observer.observe(item));
+window.addEventListener('scroll', updateProgress, { passive: true });
+window.addEventListener('load', updateProgress);
+window.addEventListener('resize', updateProgress);
 
-menuToggle?.addEventListener('click', () => {
-  const isOpen = nav.classList.toggle('is-open');
-  menuToggle.setAttribute('aria-expanded', String(isOpen));
-  document.body.style.overflow = isOpen ? 'hidden' : '';
-});
-
-nav?.querySelectorAll('a').forEach((link) => {
-  link.addEventListener('click', () => {
-    nav.classList.remove('is-open');
-    menuToggle?.setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
+if (toggle && nav) {
+  toggle.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!expanded));
+    nav.classList.toggle('is-open');
   });
-});
 
-window.addEventListener('scroll', updateScrollUI, { passive: true });
-window.addEventListener('resize', updateScrollUI);
-updateScrollUI();
+  nav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      toggle.setAttribute('aria-expanded', 'false');
+      nav.classList.remove('is-open');
+    });
+  });
+}
