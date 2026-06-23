@@ -3,7 +3,26 @@ const revealItems = document.querySelectorAll(".reveal");
 const menuToggle = document.querySelector("[data-menu-toggle]");
 const nav = document.querySelector("[data-nav]");
 
+const heroImage = document.querySelector(".hero-bg img");
+
+function updateHeroParallax() {
+  if (!heroImage) return;
+  if (window.matchMedia("(max-width: 900px)").matches) {
+    heroImage.style.transform = "";
+    return;
+  }
+
+  const scrollY = window.scrollY || window.pageYOffset;
+  const baseMove = 82;
+  const maxShift = 125;
+  const shift = Math.min(scrollY * 0.22, maxShift);
+  const move = baseMove - shift;
+  heroImage.style.transform = `scale(1.12) translate3d(0, ${move}px, 0)`;
+}
+
+
 function updateProgress() {
+  updateHeroParallax();
   const doc = document.documentElement;
   const scrollTop = doc.scrollTop || document.body.scrollTop;
   const max = doc.scrollHeight - doc.clientHeight;
@@ -21,6 +40,8 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.14 });
 
 revealItems.forEach((item) => revealObserver.observe(item));
+
+updateHeroParallax();
 
 window.addEventListener("scroll", updateProgress, { passive: true });
 window.addEventListener("load", updateProgress);
