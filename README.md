@@ -82,3 +82,14 @@ As informações do PDF completo foram reorganizadas em uma narrativa de site-ma
 - Removido player MP4 local da seção de vídeo.
 - Texto do hero atualizado para `Trilogia • Fase I • O Retrato do Tempo`.
 - Mantidos ajustes de header centralizado, parallax, reenquadramento, galeria preenchida e zoom da foto sentada.
+
+
+## V12 — Revisões do cliente
+
+- Hero ajustado para foto P&B sem efeito de luz/sepia, com exposição reduzida suavemente.
+- Bloco Dimensão: removido `20+ cidades`, `60 apresentações` sem `aproximadas`, e `1 ano de turnê`.
+- Bloco Sinônimos destacado como área própria.
+- Placeholders adicionados para Elba Ramalho, João Ramalho e fotos futuras.
+- Texto de João Ramalho destacado com novo bloco editorial.
+- Bloco `Por que esta celebração é diferente?` reorganizado com destaque final e placeholder.
+- Bloco Brasil ampliado com duração, abertura, encerramento, capacidade, meses por região e placeholder do mapa.

@@ -196,13 +196,12 @@ ul { margin: 0; padding-left: 1.15rem; }
   height: 100%;
   object-fit: cover;
   object-position: center top;
-  filter: grayscale(100%) sepia(16%) contrast(1.08) brightness(.88);
+  filter: grayscale(100%) brightness(.72);
 }
 .hero-overlay {
   background:
-    radial-gradient(circle at 50% 18%, rgba(246,239,230,.18), transparent 18rem),
-    linear-gradient(90deg, rgba(10,8,6,.94) 0%, rgba(10,8,6,.70) 44%, rgba(10,8,6,.36) 100%),
-    linear-gradient(180deg, rgba(10,8,6,.06), rgba(10,8,6,.78));
+    linear-gradient(90deg, rgba(10,8,6,.86) 0%, rgba(10,8,6,.60) 44%, rgba(10,8,6,.36) 100%),
+    linear-gradient(180deg, rgba(10,8,6,.04), rgba(10,8,6,.72));
 }
 .hero-layout {
   display: grid;
@@ -432,7 +431,7 @@ h3 {
 }
 .number-grid {
   display: grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: .85rem;
 }
 
@@ -796,7 +795,7 @@ h3 {
 @media (max-width: 840px) {
   .hero-bg img {
     object-position: center top;
-    filter: grayscale(100%) sepia(16%) contrast(1.08) brightness(.82);
+    filter: grayscale(100%) brightness(.72);
   }
 
   .national-event::before {
@@ -991,4 +990,224 @@ h3 {
   height: 100%;
   border: 0;
   background: #000;
+}
+
+
+/* Revisões cliente — placeholders e novos blocos editoriais */
+.placeholder-card {
+  min-height: 240px;
+  border: 1px dashed rgba(27, 21, 16, .28);
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.26), rgba(255,255,255,.08));
+  border-radius: var(--radius);
+  display: grid;
+  place-content: center;
+  gap: .35rem;
+  padding: 1.25rem;
+  text-align: center;
+  color: rgba(27,21,16,.72);
+}
+
+.placeholder-card b {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1;
+  letter-spacing: .05em;
+  color: var(--ink);
+}
+
+.placeholder-card small {
+  max-width: 36ch;
+  margin-inline: auto;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-size: .72rem;
+  color: rgba(27,21,16,.58);
+}
+
+.section-dark .placeholder-card,
+.route-panel .placeholder-card,
+.synonyms-highlight .placeholder-card {
+  border-color: rgba(246,239,230,.22);
+  background: rgba(246,239,230,.045);
+  color: rgba(246,239,230,.76);
+}
+
+.section-dark .placeholder-card b,
+.route-panel .placeholder-card b,
+.synonyms-highlight .placeholder-card b {
+  color: var(--white);
+}
+
+.section-dark .placeholder-card small,
+.route-panel .placeholder-card small,
+.synonyms-highlight .placeholder-card small {
+  color: rgba(246,239,230,.60);
+}
+
+.moment-side {
+  display: grid;
+  gap: 1rem;
+}
+
+.photo-placeholder {
+  min-height: 280px;
+}
+
+.wide-placeholder {
+  margin-bottom: 1rem;
+  min-height: 340px;
+}
+
+.trilogy-placeholder {
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.30), rgba(255,255,255,.08));
+}
+
+.tour-facts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .75rem;
+  margin: 1.15rem 0 1rem;
+}
+
+.tour-facts-grid article,
+.region-calendar article {
+  border: 1px solid rgba(246,239,230,.14);
+  background: rgba(246,239,230,.04);
+  border-radius: var(--radius);
+  padding: .9rem;
+}
+
+.tour-facts-grid span,
+.region-calendar span {
+  display: block;
+  margin-bottom: .3rem;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-weight: 700;
+  font-size: .68rem;
+}
+
+.tour-facts-grid strong,
+.region-calendar strong {
+  display: block;
+  font-family: "Libre Baskerville", Georgia, serif;
+  line-height: 1.35;
+  color: rgba(246,239,230,.92);
+}
+
+.route-map-placeholder {
+  min-height: 300px;
+  margin: 1rem 0 1.3rem;
+}
+
+.region-calendar > div {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0,1fr));
+  gap: .65rem;
+  margin-bottom: 1.2rem;
+}
+
+.synonyms-highlight {
+  margin-top: clamp(2.2rem, 5vw, 4rem);
+  padding: clamp(1.4rem, 4vw, 2.4rem);
+  border: 1px solid rgba(246,239,230,.14);
+  background:
+    radial-gradient(circle at 85% 15%, rgba(184,146,100,.12), transparent 22rem),
+    rgba(246,239,230,.04);
+  border-radius: var(--radius);
+  max-width: var(--container);
+}
+
+.synonyms-highlight h2 {
+  margin-bottom: 1.1rem;
+}
+
+.synonyms-highlight p:not(.eyebrow) {
+  max-width: 84ch;
+  color: rgba(246,239,230,.82);
+  font-size: clamp(1.05rem, 1.45vw, 1.18rem);
+}
+
+.guest-card {
+  display: grid;
+  gap: 1rem;
+}
+
+.guest-photo-placeholder {
+  min-height: 260px;
+}
+
+.guest-highlight {
+  margin-top: clamp(1.4rem, 4vw, 2.6rem);
+  display: grid;
+  grid-template-columns: minmax(280px, .85fr) minmax(0, 1.15fr);
+  gap: clamp(1.2rem, 3.5vw, 2rem);
+  align-items: center;
+  padding: clamp(1.2rem, 3.2vw, 2rem);
+  border: 1px solid var(--line-dark);
+  background: rgba(255,255,255,.34);
+  border-radius: var(--radius);
+}
+
+.guest-feature-placeholder {
+  min-height: 320px;
+}
+
+.guest-highlight-copy p:not(.eyebrow) {
+  color: rgba(27,21,16,.78);
+  font-size: clamp(1.03rem, 1.4vw, 1.15rem);
+}
+
+.celebration-highlight {
+  margin-top: clamp(2rem, 5vw, 4rem);
+  display: grid;
+  grid-template-columns: minmax(280px, .8fr) minmax(0, 1.2fr);
+  gap: clamp(1.2rem, 3.5vw, 2rem);
+  align-items: center;
+  padding: clamp(1.2rem, 3.2vw, 2rem);
+  border: 1px solid var(--line-dark);
+  background: rgba(255,255,255,.42);
+  border-radius: var(--radius);
+}
+
+.celebration-photo-placeholder {
+  min-height: 320px;
+}
+
+.celebration-highlight p:not(.eyebrow) {
+  color: rgba(27,21,16,.80);
+  font-size: clamp(1.03rem, 1.4vw, 1.15rem);
+}
+
+
+@media (max-width: 1100px) {
+  .tour-facts-grid,
+  .region-calendar > div,
+  .guest-highlight,
+  .celebration-highlight {
+    grid-template-columns: 1fr;
+  }
+
+  .number-grid {
+    grid-template-columns: repeat(3, minmax(0,1fr));
+  }
+}
+
+@media (max-width: 840px) {
+  .tour-facts-grid,
+  .region-calendar > div {
+    grid-template-columns: 1fr;
+  }
+
+  .wide-placeholder,
+  .route-map-placeholder,
+  .guest-photo-placeholder,
+  .guest-feature-placeholder,
+  .celebration-photo-placeholder,
+  .photo-placeholder {
+    min-height: 220px;
+  }
 }
