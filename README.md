@@ -93,3 +93,21 @@ As informações do PDF completo foram reorganizadas em uma narrativa de site-ma
 - Texto de João Ramalho destacado com novo bloco editorial.
 - Bloco `Por que esta celebração é diferente?` reorganizado com destaque final e placeholder.
 - Bloco Brasil ampliado com duração, abertura, encerramento, capacidade, meses por região e placeholder do mapa.
+
+
+## Ajuste V13
+
+- Placeholder da seção `Não existe outro aniversário de 50 anos` movido para baixo do texto principal da seção.
+- Placeholder do mapa do Brasil movido para abaixo do título `A maior turnê da carreira de Zé Ramalho`.
+
+
+## Ajuste V14 — Fotos finais
+
+- Foto 01 inserida na seção `Não existe outro aniversário de 50 anos`.
+- Foto 02 inserida na seção `Uma história grande demais para caber em uma única turnê`.
+- Mapa SVG inserido na seção `A maior turnê da carreira de Zé Ramalho`.
+- Foto 03 inserida em `Momentos únicos. Momentos memoráveis`.
+- Fotos 04 e 05 inseridas em Elba Ramalho e João Ramalho.
+- Foto 06 inserida no bloco `O elo entre gerações`.
+- Foto 07 inserida em `Do Fantástico para as estradas`.
+- Foto 08 inserida no bloco `A maior celebração da carreira de Zé Ramalho`.

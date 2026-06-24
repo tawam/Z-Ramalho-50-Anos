@@ -1211,3 +1211,107 @@ h3 {
     min-height: 220px;
   }
 }
+
+
+/* V13: reposicionamento de placeholders solicitados pelo cliente */
+.moment-photo-placeholder {
+  margin-top: clamp(1.5rem, 3vw, 2rem);
+}
+
+.route-map-inline {
+  margin: clamp(1.3rem, 3vw, 1.8rem) 0 clamp(1.25rem, 3vw, 1.7rem);
+  min-height: 340px;
+}
+
+@media (max-width: 840px) {
+  .route-map-inline {
+    min-height: 260px;
+  }
+}
+
+
+/* V14: fotos finais recebidas do cliente */
+.reveal-media {
+  overflow: hidden;
+}
+
+.wide-photo-card {
+  margin-bottom: clamp(1.5rem, 4vw, 2.4rem);
+}
+
+.wide-photo-card img {
+  aspect-ratio: 21 / 8;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.moment-photo-placeholder {
+  margin-top: clamp(1.5rem, 3vw, 2rem);
+}
+
+.moment-photo-placeholder img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.route-map-inline {
+  margin: clamp(1.3rem, 3vw, 1.8rem) 0 clamp(1.25rem, 3vw, 1.7rem);
+  min-height: auto;
+  border: 1px solid rgba(246,239,230,.18);
+  border-radius: var(--radius);
+  background:
+    radial-gradient(circle at 50% 50%, rgba(246,239,230,.08), transparent 60%),
+    rgba(246,239,230,.035);
+  padding: clamp(1rem, 2.4vw, 1.5rem);
+  overflow: hidden;
+}
+
+.route-map-inline img {
+  width: 100%;
+  height: auto;
+  max-height: 430px;
+  object-fit: contain;
+  filter: none !important;
+}
+
+.guest-photo {
+  margin: 0;
+}
+
+.guest-photo img,
+.guest-feature-placeholder img,
+.celebration-photo-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.guest-photo-placeholder img {
+  aspect-ratio: 16 / 10;
+  object-position: center center;
+}
+
+.guest-feature-placeholder img {
+  aspect-ratio: 16 / 11;
+  object-position: center center;
+}
+
+.celebration-photo-placeholder img {
+  aspect-ratio: 16 / 11;
+  object-position: center center;
+}
+
+.launch-section .photo-card img {
+  object-position: center center;
+}
+
+@media (max-width: 840px) {
+  .wide-photo-card img {
+    aspect-ratio: 16 / 9;
+  }
+
+  .route-map-inline img {
+    max-height: none;
+  }
+}
