@@ -1315,3 +1315,19 @@ h3 {
     max-height: none;
   }
 }
+
+
+/* V17: correção de enquadramento da foto 08 no bloco de celebração */
+.celebration-photo-placeholder {
+  overflow: hidden;
+}
+
+.celebration-photo-placeholder img {
+  aspect-ratio: 16 / 11;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center 22%;
+  transform: scale(1.18);
+  transform-origin: center 22%;
+}
