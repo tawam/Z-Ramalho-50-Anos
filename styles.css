@@ -1317,11 +1317,6 @@ h3 {
 }
 
 
-/* V17: correção de enquadramento da foto 08 no bloco de celebração */
-.celebration-photo-placeholder {
-  overflow: hidden;
-}
-
 .celebration-photo-placeholder img {
   aspect-ratio: 16 / 11;
   width: 100%;
@@ -1330,4 +1325,285 @@ h3 {
   object-position: center 22%;
   transform: scale(1.18);
   transform-origin: center 22%;
+}
+
+
+/* V18: foto 08 recomposta em formato wide, sem zoom estourado */
+.celebration-photo-placeholder {
+  overflow: hidden;
+  background: transparent;
+}
+
+.celebration-photo-placeholder img {
+  aspect-ratio: 16 / 11;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+  transform: none !important;
+}
+
+
+/* Atualização 2026-06-30 — Turnê, mídia, participações e merchandising */
+.mockup-frame {
+  margin: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(184,146,100,.24);
+  background:
+    radial-gradient(circle at 80% 12%, rgba(184,146,100,.16), transparent 24rem),
+    rgba(246,239,230,.045);
+  box-shadow: 0 24px 80px rgba(0,0,0,.28);
+}
+
+.mockup-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: none !important;
+}
+
+.tour-bus-section {
+  padding-block: clamp(5rem, 9vw, 8rem);
+}
+
+.tour-bus-showcase {
+  position: relative;
+  min-height: clamp(460px, 58vw, 720px);
+  display: grid;
+  align-items: end;
+}
+
+.tour-bus-mockup {
+  position: absolute;
+  inset: 0;
+}
+
+.tour-bus-mockup img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mockup-overlay-copy {
+  position: relative;
+  z-index: 2;
+  width: min(620px, 100%);
+  margin: clamp(1rem, 3vw, 2rem);
+  padding: clamp(1.2rem, 3.5vw, 2.2rem);
+  border: 1px solid rgba(246,239,230,.16);
+  border-radius: var(--radius);
+  background: rgba(15,12,9,.82);
+  backdrop-filter: blur(6px);
+}
+
+.mockup-overlay-copy h2 {
+  margin-bottom: 1rem;
+}
+
+.mockup-overlay-copy p:not(.eyebrow) {
+  color: rgba(246,239,230,.80);
+  font-size: clamp(1rem, 1.35vw, 1.1rem);
+}
+
+.mockup-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem;
+  margin-top: 1.25rem;
+}
+
+.mockup-tags span {
+  border: 1px solid rgba(246,239,230,.14);
+  background: rgba(246,239,230,.055);
+  border-radius: var(--radius);
+  padding: .52rem .68rem;
+  color: rgba(246,239,230,.76);
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-size: .68rem;
+}
+
+.regional-guest-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.regional-guest-card {
+  min-height: 240px;
+  display: grid;
+  align-content: end;
+  border: 1px solid var(--line-dark);
+  background: rgba(255,255,255,.38);
+  border-radius: var(--radius);
+  padding: clamp(1.15rem, 2.4vw, 1.65rem);
+}
+
+.regional-guest-card span,
+.merch-feature-card span {
+  display: inline-block;
+  margin-bottom: .8rem;
+  color: var(--gold);
+  font-weight: 700;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  font-size: .78rem;
+}
+
+.regional-guest-card h3 {
+  margin-bottom: .55rem;
+}
+
+.regional-guest-card p {
+  color: rgba(27,21,16,.76);
+}
+
+.guest-name-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 .6rem;
+  display: grid;
+  gap: .38rem;
+}
+
+.guest-name-list li {
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(1.16rem, 2vw, 1.45rem);
+  line-height: 1.25;
+  color: var(--ink);
+}
+
+.media-plan-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .75rem;
+  margin-top: 1.35rem;
+}
+
+.media-plan-grid article {
+  border: 1px solid var(--line-dark);
+  background: rgba(255,255,255,.32);
+  border-radius: var(--radius);
+  padding: .95rem;
+}
+
+.media-plan-grid span {
+  display: block;
+  margin-bottom: .35rem;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  font-weight: 700;
+  font-size: .72rem;
+}
+
+.media-plan-grid p {
+  margin: 0;
+  color: rgba(27,21,16,.76);
+  font-size: .93rem;
+  line-height: 1.5;
+}
+
+.merchandising-section {
+  padding-top: clamp(5rem, 9vw, 8rem);
+}
+
+.merch-container .section-heading {
+  max-width: 980px;
+}
+
+.merch-mockup-frame {
+  min-height: clamp(360px, 54vw, 690px);
+  margin-bottom: clamp(1.2rem, 3vw, 2rem);
+  background: rgba(255,255,255,.34);
+}
+
+.merch-mockup-frame img {
+  width: 100%;
+  min-height: clamp(360px, 54vw, 690px);
+  object-fit: cover;
+}
+
+.merch-info-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  gap: 1rem;
+}
+
+.merch-feature-card,
+.merch-list-card {
+  border: 1px solid var(--line-dark);
+  background: rgba(255,255,255,.38);
+  border-radius: var(--radius);
+  padding: clamp(1.15rem, 2.6vw, 1.8rem);
+}
+
+.merch-feature-card p {
+  color: rgba(27,21,16,.78);
+}
+
+.merch-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .65rem;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.merch-list li {
+  border: 1px solid var(--line-dark);
+  border-radius: var(--radius);
+  background: rgba(255,255,255,.28);
+  padding: .8rem .9rem;
+  color: rgba(27,21,16,.82);
+}
+
+/* Ajuste final: foto 08 com mais respiro no card de síntese */
+.celebration-photo-placeholder {
+  display: grid;
+  place-items: center;
+  padding: clamp(.65rem, 1.4vw, 1rem);
+  background: rgba(15,12,9,.08);
+}
+
+.celebration-photo-placeholder img {
+  width: min(92%, 640px);
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center center;
+  transform: none !important;
+}
+
+@media (max-width: 1100px) {
+  .regional-guest-grid,
+  .media-plan-grid,
+  .merch-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tour-bus-showcase {
+    min-height: 560px;
+  }
+}
+
+@media (max-width: 840px) {
+  .tour-bus-showcase {
+    min-height: 520px;
+  }
+
+  .tour-bus-mockup img,
+  .merch-mockup-frame img {
+    object-position: center center;
+  }
+
+  .mockup-overlay-copy {
+    margin: .75rem;
+  }
+
+  .merch-list {
+    grid-template-columns: 1fr;
+  }
 }

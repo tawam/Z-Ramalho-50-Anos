@@ -87,7 +87,7 @@ As informações do PDF completo foram reorganizadas em uma narrativa de site-ma
 ## V12 — Revisões do cliente
 
 - Hero ajustado para foto P&B sem efeito de luz/sepia, com exposição reduzida suavemente.
-- Bloco Dimensão: removido `20+ cidades`, `60 apresentações` sem `aproximadas`, e `1 ano de turnê`.
+- Bloco Dimensão: removido `20+ cidades`, `50 shows previstos` sem `aproximadas`, e `1 ano de turnê`.
 - Bloco Sinônimos destacado como área própria.
 - Placeholders adicionados para Elba Ramalho, João Ramalho e fotos futuras.
 - Texto de João Ramalho destacado com novo bloco editorial.
@@ -111,3 +111,40 @@ As informações do PDF completo foram reorganizadas em uma narrativa de site-ma
 - Foto 06 inserida no bloco `O elo entre gerações`.
 - Foto 07 inserida em `Do Fantástico para as estradas`.
 - Foto 08 inserida no bloco `A maior celebração da carreira de Zé Ramalho`.
+
+
+## V16 URGENTE — Fotos OK
+
+Este pacote foi gerado para subir direto na RAIZ do GitHub Pages.
+
+Checklist confirmado:
+- `index.html` contém a marca `V16_URGENTE_FOTOS_OK`.
+- Todas as imagens novas estão em `assets/img/`.
+- O mapa SVG está em `assets/img/mapa-brasil.svg`.
+- Os `src` das imagens usam `?v=16` para evitar cache.
+- Os placeholders antigos das áreas solicitadas não aparecem mais no HTML desta versão.
+
+
+## V17 — Correção foto 08
+
+- Ajustado o enquadramento da foto 08 no bloco `A maior celebração da carreira de Zé Ramalho`.
+- O ajuste é feito por CSS, com zoom/crop suave para esconder a faixa preta inferior da imagem.
+- Arquivo alterado: `styles.css`.
+
+## V18 — Foto 08 natural
+
+- A foto 08 foi recomposta em 16:11 usando a própria imagem como fundo suave, evitando faixa preta e evitando zoom excessivo.
+- O CSS agressivo anterior dessa foto foi removido.
+- Arquivos alterados: `assets/img/foto-08-celebracao.webp` e `styles.css`.
+
+
+---
+
+## Atualização 2026-06-30
+
+- Turnê ajustada para **50 shows previstos**.
+- Linguagem territorial ajustada para **todas as regiões do Brasil**.
+- Adicionado placeholder para mockup do ônibus oficial da turnê.
+- Participações especiais reorganizadas por praça como **previstas**.
+- Estratégia nacional de divulgação reforçada com Fantástico, Altas Horas, Marcos Mion e assessoria de imprensa nacional.
+- Criada seção exclusiva de merchandising oficial com destaque para o vinil comemorativo.
