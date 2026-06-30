@@ -1393,8 +1393,9 @@ h3 {
   padding: clamp(1.2rem, 3.5vw, 2.2rem);
   border: 1px solid rgba(246,239,230,.16);
   border-radius: var(--radius);
-  background: rgba(15,12,9,.82);
-  backdrop-filter: blur(6px);
+  background: linear-gradient(135deg, rgba(15,12,9,.64), rgba(15,12,9,.44));
+  backdrop-filter: blur(2px);
+  box-shadow: 0 24px 90px rgba(0,0,0,.28);
 }
 
 .mockup-overlay-copy h2 {
